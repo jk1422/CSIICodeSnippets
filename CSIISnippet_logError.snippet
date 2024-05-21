@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Log Error</Title>
+      <Author>jk142</Author>
+      <Description>Log Error for CSII mod development</Description>
+      <Shortcut>_err</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[log.Error($$"$Comment$: {$Exception$}");]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>Comment</ID>
+          <ToolTip>Enter comment</ToolTip>
+          <Default></Default>
+        </Literal>
+        <Literal>
+          <ID>Exception</ID>
+          <ToolTip>Enter Exception</ToolTip>
+          <Default>ex.Message</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
